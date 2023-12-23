@@ -1,0 +1,18 @@
+using System;
+
+public class Sum
+{
+    public static void Main(string[] args)
+    {
+        int n, m,sum=0;
+        Console.Write("Enter the Number = ");
+        n=int.Parse(Console.ReadLine());
+        while(n>0)
+        {
+            m=n%10;
+            sum=sum+m;
+            n=n/10;
+        }
+        Console.Write("Sum of Digits = "+sum);
+    }
+}
